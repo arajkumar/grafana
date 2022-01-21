@@ -15,7 +15,6 @@ COPY scripts scripts
 COPY cue.mod cue.mod
 COPY .bingo .bingo
 
-RUN go mod verify
 RUN go run build.go build
 # RUN make build-go
 # Need to copy the generated binaries to a non-platform specific location to handle
